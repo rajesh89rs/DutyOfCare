@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.description  = "Duty of Care SDK"
   s.homepage     = "http://EXAMPLE/DutyOfCareSDK"
   s.license      = { :type => 'MIT' }
+  s.platform     = :ios, "10.0"
   s.author             = { "rajesh" => "rajesh.ramshettysiddaraju@amadeus.com" }
   s.source       = { :git => "https://github.com/rajesh89rs/DutyOfCare.git" } #, :tag => "#{s.version}"
   s.ios.vendored_frameworks = 'DutyOfCareSDK.framework'
