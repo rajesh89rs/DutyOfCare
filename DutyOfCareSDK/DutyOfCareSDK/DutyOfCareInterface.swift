@@ -7,12 +7,20 @@
 //
 
 import Foundation
+//import Alamofire
 
 @objc public class DutyOfCareInterface: NSObject {
     
-    public func testDOCInterface() -> Bool {
-        print("#############DutyOfCareInterface#############")
-        return true
+    public func registerUser(userGuid: String, userId: String, clientId: String, email: String, _ completion: @escaping (_ success: Bool) -> Void) {
+        DOCRegistrationManager().registerUser(params: ["userGuid": userGuid, "userId": userId, "clientId": clientId, "email":  email]) { (succ) in
+            completion(succ)
+        }
+    }
+    
+    public func testApi(param1: String, param2: String, _ completion: @escaping (_ success: Bool) -> Void) {
+        DOCRegistrationManager().testApi(params: ["email": param1, "password":  param2]) { (success) in
+            completion(success)
+        }
     }
     
 }

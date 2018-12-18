@@ -11,6 +11,12 @@
 		10C2B39021B8E07D00D412CD /* DutyOfCareSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B38F21B8E07D00D412CD /* DutyOfCareSDKTests.swift */; };
 		10C2B39221B8E07D00D412CD /* DutyOfCareSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C2B38421B8E07D00D412CD /* DutyOfCareSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10C2B39C21B8E0D700D412CD /* DutyOfCareInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B39B21B8E0D700D412CD /* DutyOfCareInterface.swift */; };
+		10CCD3C521C0E976002B05D3 /* DOCRegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CCD3C421C0E976002B05D3 /* DOCRegistrationManager.swift */; };
+		10CCD3C921C0E9CA002B05D3 /* DOCAuthRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CCD3C721C0E9C9002B05D3 /* DOCAuthRequests.swift */; };
+		10CCD3CA21C0E9CA002B05D3 /* DOCNetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CCD3C821C0E9C9002B05D3 /* DOCNetworkRequests.swift */; };
+		10CCD3CC21C0E9F7002B05D3 /* DOCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CCD3CB21C0E9F7002B05D3 /* DOCConstants.swift */; };
+		10CCD3D121C79528002B05D3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CCD3D021C79528002B05D3 /* Response.swift */; };
+		10CCD3D721C7BE7E002B05D3 /* DOCCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10CCD3D521C7BE7E002B05D3 /* DOCCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +37,12 @@
 		10C2B38F21B8E07D00D412CD /* DutyOfCareSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyOfCareSDKTests.swift; sourceTree = "<group>"; };
 		10C2B39121B8E07D00D412CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C2B39B21B8E0D700D412CD /* DutyOfCareInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyOfCareInterface.swift; sourceTree = "<group>"; };
+		10CCD3C421C0E976002B05D3 /* DOCRegistrationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOCRegistrationManager.swift; sourceTree = "<group>"; };
+		10CCD3C721C0E9C9002B05D3 /* DOCAuthRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOCAuthRequests.swift; sourceTree = "<group>"; };
+		10CCD3C821C0E9C9002B05D3 /* DOCNetworkRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOCNetworkRequests.swift; sourceTree = "<group>"; };
+		10CCD3CB21C0E9F7002B05D3 /* DOCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOCConstants.swift; sourceTree = "<group>"; };
+		10CCD3D021C79528002B05D3 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		10CCD3D621C7BE7E002B05D3 /* DOCCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DOCCoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 				10C2B38321B8E07D00D412CD /* DutyOfCareSDK */,
 				10C2B38E21B8E07D00D412CD /* DutyOfCareSDKTests */,
 				10C2B38221B8E07D00D412CD /* Products */,
+				403766EDBA4A40B3DC04C670 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +86,10 @@
 		10C2B38321B8E07D00D412CD /* DutyOfCareSDK */ = {
 			isa = PBXGroup;
 			children = (
+				10CCD3D821C7BE87002B05D3 /* CoreData */,
+				10CCD3CB21C0E9F7002B05D3 /* DOCConstants.swift */,
+				10CCD3C621C0E9C9002B05D3 /* NetworkRequests */,
+				10CCD3C421C0E976002B05D3 /* DOCRegistrationManager.swift */,
 				10C2B38421B8E07D00D412CD /* DutyOfCareSDK.h */,
 				10C2B38521B8E07D00D412CD /* Info.plist */,
 				10C2B39B21B8E0D700D412CD /* DutyOfCareInterface.swift */,
@@ -87,6 +104,39 @@
 				10C2B39121B8E07D00D412CD /* Info.plist */,
 			);
 			path = DutyOfCareSDKTests;
+			sourceTree = "<group>";
+		};
+		10CCD3C621C0E9C9002B05D3 /* NetworkRequests */ = {
+			isa = PBXGroup;
+			children = (
+				10CCD3CF21C79506002B05D3 /* Network */,
+				10CCD3C721C0E9C9002B05D3 /* DOCAuthRequests.swift */,
+				10CCD3C821C0E9C9002B05D3 /* DOCNetworkRequests.swift */,
+			);
+			path = NetworkRequests;
+			sourceTree = "<group>";
+		};
+		10CCD3CF21C79506002B05D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				10CCD3D021C79528002B05D3 /* Response.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		10CCD3D821C7BE87002B05D3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				10CCD3D521C7BE7E002B05D3 /* DOCCoreData.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		403766EDBA4A40B3DC04C670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C2B39C21B8E0D700D412CD /* DutyOfCareInterface.swift in Sources */,
+				10CCD3C521C0E976002B05D3 /* DOCRegistrationManager.swift in Sources */,
+				10CCD3C921C0E9CA002B05D3 /* DOCAuthRequests.swift in Sources */,
+				10CCD3CC21C0E9F7002B05D3 /* DOCConstants.swift in Sources */,
+				10CCD3D721C7BE7E002B05D3 /* DOCCoreData.xcdatamodeld in Sources */,
+				10CCD3D121C79528002B05D3 /* Response.swift in Sources */,
+				10CCD3CA21C0E9CA002B05D3 /* DOCNetworkRequests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +519,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10CCD3D521C7BE7E002B05D3 /* DOCCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10CCD3D621C7BE7E002B05D3 /* DOCCoreData.xcdatamodel */,
+			);
+			currentVersion = 10CCD3D621C7BE7E002B05D3 /* DOCCoreData.xcdatamodel */;
+			path = DOCCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10C2B37821B8E07D00D412CD /* Project object */;
 }
