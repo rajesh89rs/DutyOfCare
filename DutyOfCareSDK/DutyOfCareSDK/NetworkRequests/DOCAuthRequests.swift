@@ -11,7 +11,6 @@ import UIKit
 extension DOCNetworkRequests {
 
     func registerUser(params: Parameters, completion: @escaping (_ response: DataResponse?) -> Void) {
-        
         var requestParams = params
         var headers: [String: String] = [:]
         if let token = requestParams.removeValue(forKey: "token") as? String {
@@ -19,13 +18,6 @@ extension DOCNetworkRequests {
         }
         self.postRequest(url: RegistrationItems.registrationUrl, params: requestParams, headers: headers) { (response) in
             completion(response)
-        }
-    }
-    
-    func testApi(params: Parameters, completion: @escaping (_ response: DataResponse?) -> Void) {
-        self.postRequest(url: RegistrationItems.testRegistrationUrl, params: params) { (response) in
-            completion(response)
-            return
         }
     }
     

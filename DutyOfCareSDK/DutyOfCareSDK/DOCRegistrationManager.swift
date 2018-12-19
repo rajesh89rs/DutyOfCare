@@ -31,18 +31,6 @@ class DOCRegistrationManager: NSObject {
         }
     }
     
-    func testApi(params: [String: Any], _ completion: @escaping (_ success: Bool) -> Void) {
-        DOCNetworkRequests().testApi(params: params) { (responseData) in
-            if let responseData = responseData, let responseObject = responseData.jsonData {
-                print(responseObject)
-                completion(true)
-                return
-            }
-            completion(false)
-            return
-        }
-    }
-    
     func getAuthToken(userGuid: String, userId: String, clientId: String, _ completion: @escaping (_ token: String?) -> Void) {
         var params: [String: Any] = [:]
         params["User_GUID"] = userGuid;

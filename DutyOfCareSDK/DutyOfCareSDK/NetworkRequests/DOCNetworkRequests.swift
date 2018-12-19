@@ -36,9 +36,7 @@ public class DOCNetworkRequests: NSObject {
         }
         print(requestHeaders)
         request.allHTTPHeaderFields = requestHeaders
-        
         request.httpMethod = "POST"
-
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
         } catch let error {
